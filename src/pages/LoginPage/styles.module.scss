@@ -1,0 +1,70 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius);
+  background-color: var(--input-bg);
+  outline: none;
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: var(--input-focus);
+  box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.2);
+}
+
+.button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #005f99;
+}
+
+.link {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--secondary-color);
+  cursor: pointer;
+}

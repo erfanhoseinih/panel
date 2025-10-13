@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #007acc;
+  --secondary-color: #00bfa6;
+  --background: #f8f9fa;
+  --text-color: #333;
+  --border-radius: 8px;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --input-focus: #007acc;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+}
