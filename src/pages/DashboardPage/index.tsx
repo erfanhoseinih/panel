@@ -104,7 +104,7 @@ export default function DashboardPage() {
                 dataKey="value"
                 label
               >
-                {notificationData.map((entry, index) => (
+                {notificationData.map((_, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
