@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.logout {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 1rem;
+}
+
+.logout:hover {
+  background-color: #009b89;
+}
