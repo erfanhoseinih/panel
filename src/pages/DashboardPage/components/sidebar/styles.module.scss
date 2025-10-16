@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   padding: 0.75rem 2rem;
-  background-color: rgb(58, 58, 58);
+  background-color:var( --tertiary-color);
 
   .logo {
     width: 100%;
@@ -26,13 +26,14 @@
     border: none;
     border-radius: 0.5rem;
     padding: 0.6rem 1.2rem;
+    margin-bottom: 1rem;
     &:hover {
       cursor: pointer;
       background-color: rgb(0, 145, 125);
     }
   }
 
-  button:last-child {
+  button:nth-last-child(2) {
     margin-top: auto;
   }
 }

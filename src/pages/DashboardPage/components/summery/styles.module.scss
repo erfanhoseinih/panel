@@ -1,12 +1,21 @@
 .cardGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-}
+  gap: 2.5rem;
+  .card {
+    background-color: var(  --tertiary-light-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    // box-shadow: 0 4px 0.5rem rgba(0, 0, 0, 0.15);
+    aspect-ratio: 1 / 1;
+    font-size: 1.5rem;
+    color: white;
 
-.card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    h3 {
+      margin-top: 0;
+    }
+    p {
+      opacity: 0.7;
+    }
+  }
 }
