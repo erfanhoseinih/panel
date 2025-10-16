@@ -5,20 +5,7 @@
   display: flex;
   flex-direction: column;
   padding: 0.75rem 2rem;
-  background-color:var( --tertiary-color);
-
-  .logo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-
-    img {
-      width: 100px;
-      margin: -1rem;
-    }
-  }
+  background-color: var(--tertiary-color);
 
   button {
     color: black;
@@ -27,6 +14,7 @@
     border-radius: 0.5rem;
     padding: 0.6rem 1.2rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     &:hover {
       cursor: pointer;
       background-color: rgb(0, 145, 125);

@@ -9,9 +9,6 @@ const Sidebar = ({ className }: { className: string }) => {
 
   return (
     <div className={`${styles.sidebar} ${className}`}>
-      <div className={styles.logo}>
-        <p>Solar Panels</p> <img src="/images/logo.svg" />
-      </div>
       <button onClick={() => setChartsShow(!chartsShow)}>
         مشاهده نمودار ها
       </button>

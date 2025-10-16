@@ -17,6 +17,9 @@ const Header = ({ className }: { className: string }) => {
   return (
     <div className={`${styles.header} ${className}`}>
       <h1 className={styles.title}>{formattedTime}</h1>
+      <div className={styles.logo}>
+        <p>Solar Panels</p> <img src="/images/logo.svg" />
+      </div>
     </div>
   );
 };
