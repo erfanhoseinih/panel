@@ -1,7 +1,15 @@
 import { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 
-const Header = ({ className }: { className: string }) => {
+const Header = ({
+  className,
+  showSidebar,
+  setShowSidebar,
+}: {
+  className: string;
+  showSidebar: boolean;
+  setShowSidebar: (v: boolean) => void;
+}) => {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -17,7 +25,12 @@ const Header = ({ className }: { className: string }) => {
   return (
     <div className={`${styles.header} ${className}`}>
       <h1 className={styles.title}>{formattedTime}</h1>
-      <div className={styles.logo}>
+      <div
+        className={styles.logo}
+        onClick={() => {
+          setShowSidebar(!showSidebar);
+        }}
+      >
         <p>Solar Panels</p> <img src="/images/logo.svg" />
       </div>
     </div>

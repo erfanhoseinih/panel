@@ -1,0 +1,17 @@
+@use "./variables" as vars;
+
+// responsive functions
+
+@mixin breakpoint-min($size) {
+  $value: map-get(vars.$breakpoints, $size) + 1px;
+  @media (min-width: $value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-max($size) {
+  $value: map-get(vars.$breakpoints, $size);
+  @media (max-width: $value) {
+    @content;
+  }
+}
